@@ -21,6 +21,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+    "serve": "serve build",
+    "serve-build": "npm run build && npm run serve"
+  },
+  "devDependencies": {
+    "serve": "^12.0.1"
   },
   "eslintConfig": {
     "extends": [
