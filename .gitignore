@@ -26,3 +26,5 @@ yarn-error.log*
 .idea/vcs.xml
 .idea/inspectionProfiles/
 .idea/jsLinters/*
+.idea/jsLibraryMappings.xml
+package-lock.json
