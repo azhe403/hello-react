@@ -1,19 +1,7 @@
 import {useReducer} from "react";
-
-export type TodoItem = {
-    text: String;
-    checked: boolean;
-}
-
-export enum TodoItemsActionsTypes {
-    ADD_ITEM = "TODO/ITEMS/ADD_ITEM",
-    CHECK_ITEM = "TODO/ITEMS/CHECK_ITEM"
-}
-
-export type TodoItemsActions = {
-    action: TodoItemsActionsTypes;
-    payload: TodoItem;
-}
+import {TodoItem} from "./TodoItem";
+import {TodoItemsActionsTypes} from "./TodoItemsActionsTypes";
+import {TodoItemsActions} from "./TodoItemsActions";
 
 export function useTodoItems(defaultItems: TodoItem[]) {
     function reducer(state: TodoItem[], action: TodoItemsActions) {

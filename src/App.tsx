@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
-import {TodoItem, TodoItemsActionsTypes, useTodoItems} from "./todo/todo";
+import {useTodoItems} from "./todo/UseTodoItems";
 import {TodoList} from "./todo/TodoList";
+import {TodoItem} from "./todo/TodoItem";
+import {TodoItemsActionsTypes} from "./todo/TodoItemsActionsTypes";
 
 function App() {
     let [input, setInput] = React.useState("");
